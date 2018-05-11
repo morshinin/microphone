@@ -5,6 +5,7 @@
 	white: #fff;
 	black-main: #000;
 	black: #272727;
+	gray: #e6e6e6;
 	red: #ff0200;
 	red-dark: #9d0406;
 	gold: #ffcc00;
@@ -25,6 +26,8 @@ html {
 }
 body {
 	font: 400 18px / 1.5 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
 }
 /* =Grid styles */
 .container {
@@ -34,10 +37,6 @@ body {
 .col {
 
 }
-/* =Helper classes */
-.list_style_none {
-
-}
 /* =Typography */
 h1, .h1 {
 	font-size: 40px;
@@ -45,13 +44,13 @@ h1, .h1 {
 	text-align: center;
 	color: #fff;
 }
-h2, .h2,
-.sectionTitle {
+h2, .h2 {
 	font-size: 36px;
 	text-transform: uppercase;
 }
 .sectionTitle {
 	color: #9d0406;
+	text-align: center;
 }
 .sectionTitle_fancy {
 	color: #fff;
@@ -99,6 +98,16 @@ h2, .h2,
 .font-weight-bold {
 	font-weight: bold;
 }
+.list-style-none {
+	list-style: none;
+}
+/* =Spacing helpers */
+.p-0 {
+	padding: 0;
+}
+.m-0 {
+	margin: 0;
+}
 /* =Color helpers */
 .c-white {
 	color: #fff;
@@ -122,8 +131,14 @@ h2, .h2,
 .btn_success {
 	background: linear-gradient(to top, #82dd17, #1dc04b);
 }
+.btn_success:hover {
+	background: linear-gradient(to bottom, #82dd17, #1dc04b);
+}
 .btn_danger {
 	background: linear-gradient(to top, #e10019, #950505);
+}
+.btn_danger:hover {
+	background: linear-gradient(to bottom, #e10019, #950505);
 }
 /* =Price */
 .price {
@@ -232,4 +247,14 @@ h2, .h2,
 }
 .actionInput[type=radio]:checked + .actionLabel {
 	border-color: #ff0200;
+}
+/* Page Sections */
+.pageSection {
+	padding: 30px 10px;
+}
+.pageSection_testdrive {
+	background: radial-gradient(#fff 30%, #e6e6e6);
+}
+.pageSection_testimonials {
+	box-shadow: 0 0 54px 0 rgba(0, 0, 0, 0.21);
 }
