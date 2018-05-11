@@ -174,7 +174,8 @@ h4, .h4 {
 }
 @media (min-width: 768px) {
 	.btn_large {
-		width: 263px;
+		max-width: initial;
+		min-width: 263px;
 		display: inline-block;
 		margin: 5px;
 	}
@@ -378,20 +379,36 @@ input::placeholder {
 }
 /* =Slider */
 .testimonialsSlider {
-	padding: 0 40px;
+	padding: 0;
 	position: relative;	
 }
+@media (min-width: 768px) {
+	.testimonialsSlider {
+		padding: 0 40px;
+	}
+}
 .slider {
-/*  max-width: 360px;*/
+	margin-top: 50px;
+}
+@media (min-width: 768px) {
+	.slider {
+		margin-top: 0;
+	}
 }
 .slide {
 	border-radius: 30px;
   border: solid 3px #9d0406;
-  padding: 20px 40px;
   box-sizing: border-box;
-  min-height: 478px;
+  padding: 20px 10px;
   text-align: center;
-  margin: 0 30px;
+  margin: 0;
+}
+@media (min-width: 768px) {
+	.slide {
+		padding: 20px 40px;
+		min-height: 478px;
+		margin: 0 30px;
+	}
 }
 .slideHeader img {
 	margin: auto;
@@ -402,14 +419,21 @@ input::placeholder {
 .sliderControls {
 }
 .my-slick-arrow {
-	width: 50px;
-	height: 50px;
+	width: 20px;
+	height: 20px;
 	display: inline-block;
 	border: 3px solid lightgray;
 	border-right-color: transparent;
 	border-bottom-color: transparent;
 	position: absolute;
-	top: 45%;
+  top: -45px;
+}
+@media (min-width: 768px) {
+	.my-slick-arrow {
+		width: 50px;
+		height: 50px;
+		top: 45%;
+	}
 }
 .arrow-prev {
 	transform: rotate(-45deg);
