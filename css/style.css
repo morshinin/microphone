@@ -114,7 +114,7 @@ h2, .h2,
 	background: linear-gradient(to top, gray, silver);
 	border-radius: 40px / 34px;
 }
-.btn_hero {
+.btn_large {
 	min-width: 263px;
 	display: inline-block;
 	text-align: center;
@@ -176,19 +176,50 @@ h2, .h2,
 	background-size: cover;
 	background-position: top;
 }
-/* =Gift */
+/* =Form */
 .actionLabel {
-	color: #fff;
 	text-transform: uppercase;
 	font-size: 24px;
 	font-weight: 700;
-	padding: 16px 50px;
-	text-decoration: none;
-	background: linear-gradient(to top, #82dd17, #1dc04b);
-	background-origin: border-box;
 	border-radius: 40px / 34px;
 	cursor: pointer;
 	border: 3px solid transparent;
+}
+.actionLabel_checkbox {
+	color: #fff;
+	padding: 16px 50px;
+	background: linear-gradient(to top, #82dd17, #1dc04b);
+	background-origin: border-box;
+}
+.actionLabel_radio {
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	width: 360px;
+	height: 136px;
+	background: #ededed;
+	position: relative;
+}
+.actionLabel_radio:after {
+	content: '';
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 15px;
+	border-radius: 50%;
+}
+.actionLabel_color_black:after {
+	background: #101010;
+}
+.actionLabel_color_red:after {
+	background: #ff0200;
+}
+.actionLabel_color_gold:after {
+	background: #ffcc00;
+}
+.actionLabel_color_white:after {
+	background: #fff;
 }
 /*.actionLabel:hover {
 	background: linear-gradient(to bottom, #82dd17, #1dc04b);
@@ -197,5 +228,8 @@ h2, .h2,
 	display: none;
 }
 .actionInput[type=checkbox]:checked ~ .actionLabel {
+	border-color: #ff0200;
+}
+.actionInput[type=radio]:checked + .actionLabel {
 	border-color: #ff0200;
 }

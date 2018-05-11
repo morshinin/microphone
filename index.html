@@ -49,8 +49,8 @@
 				+ выбери свой подарок
 			</p>
 			<div class="action">
-				<a href="" class="btn btn_success btn_hero">Заказать</a>
-				<a href="" class="btn btn_danger btn_hero">Хочу!</a>
+				<a href="" class="btn btn_success btn_large">Заказать</a>
+				<a href="" class="btn btn_danger btn_large">Хочу!</a>
 			</div>
 			<div class="counter">
 				<p class="font-s c-white">
@@ -92,7 +92,7 @@
 					<p class="font-weight-bold font-m">Power <span class="uppercase">Bank</span></p>
 					<p>
 						<input class="actionInput" type="checkbox" name="powerBank" id="powerBank">
-						<label class="actionLabel" for="powerBank">Выбрать</label>
+						<label class="actionLabel actionLabel_checkbox" for="powerBank">Выбрать</label>
 					</p>
 				</div>
 				<img src="img/pb.png" alt="Power Bank">
@@ -102,14 +102,14 @@
 					<p class="font-weight-bold font-m">Наушники</p>
 					<p>
 						<input class="actionInput" type="checkbox" name="headphones" id="headphones">
-						<label class="actionLabel" for="headphones">Выбрать</label>
+						<label class="actionLabel actionLabel_checkbox" for="headphones">Выбрать</label>
 					</p>
 				</div>
 				<img src="img/headphones.png" alt="Наушники">
 			</div>
 		</div>
 	</section>
-	<section class="pageSection">
+	<section class="pageSection" id="variant">
 		<h2 class="sectionTitle">
 			Выбери свой цвет сейчас
 		</h2>
@@ -118,17 +118,17 @@
 				<img src="img/micContour1.png" alt="Контур микрофона">
 			</div>
 			<div class="col">
-				<label for="micBlack">Черный</label>
-				<input type="radio">
-				<label for="micRed">Красный</label>
-				<input type="radio">
-				<label for="micGold">Золотой</label>
-				<input type="radio">
-				<label for="micWhite">Белый</label>
-				<input type="radio">
+				<input class="actionInput" type="radio" name="micColor" id="micBlack">
+				<label class="actionLabel actionLabel_radio actionLabel_color_black" for="micBlack">Черный</label>
+				<input class="actionInput" type="radio" name="micColor" id="micRed">
+				<label class="actionLabel actionLabel_radio actionLabel_color_red" for="micRed">Красный</label>
+				<input class="actionInput" type="radio" name="micColor" id="micGold">
+				<label class="actionLabel actionLabel_radio actionLabel_color_gold" for="micGold">Золотой</label>
+				<input class="actionInput" type="radio" name="micColor" id="micWhite">
+				<label class="actionLabel actionLabel_radio actionLabel_color_white" for="micWhite">Белый</label>
 				<div class="action">
-					<a href="" class="btn btn_success">Выбрать</a>
-					<a href="" class="btn btn_danger">Хочу!</a>
+					<a href="" class="btn btn_success btn_large">Выбрать</a>
+					<a href="" class="btn btn_danger btn_large">Хочу!</a>
 				</div>
 			</div>
 		</div>
