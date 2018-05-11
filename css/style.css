@@ -1,5 +1,24 @@
 /* Styles for microphone landing page*/
 
+/* Colors */
+/*
+	white: #fff;
+	black-main: #000;
+	black: #272727;
+	red: #ff0200;
+	red-dark: #9d0406;
+	gold: #ffcc00;
+	success-gradient: #82dd17, #1dc04b;
+	danger-gradient: #e10019, #950505;
+	fancy-gradient: #0a00b2, #ff0000, #fffc00);
+*/
+
+/* Import fonts */
+@font-face {
+	font-family: 'Obelix Pro';
+	src: url('../font/ObelixPro-cyr.ttf') format('truetype');
+}
+
 /* =General styles */
 html {
 	max-width: 1920px;
@@ -18,4 +37,108 @@ body {
 /* =Helper classes */
 .list_style_none {
 
+}
+/* =Typography */
+h1, .h1 {
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	color: #fff;
+}
+.fancyType {
+	display: block;
+	font-family: 'Obelix Pro', cursive;
+	background: -webkit-linear-gradient(#0a00b2, #ff0000, #fffc00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* =Typography helpers */
+.text-align-center {
+	text-align: center;
+}
+.font-s {
+	font-size: 14px;
+}
+.font-20 {
+	font-size: 20px;
+}
+.lh-43 {
+	line-height: 43px;
+}
+/* =Color helpers */
+.c-white {
+	color: #fff;
+}
+/* =Buttons */
+.btn {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: 700;
+	padding: 16px 50px;
+	text-decoration: none;
+	background: linear-gradient(to top, gray, silver);
+	border-radius: 40px / 34px;
+}
+.btn_hero {
+	min-width: 263px;
+	display: inline-block;
+	text-align: center;
+}
+.btn_success {
+	background: linear-gradient(to top, #82dd17, #1dc04b);
+}
+.btn_danger {
+	background: linear-gradient(to top, #e10019, #950505);
+}
+/* =Price */
+.price {
+	text-align: center;
+	font-weight: bold;
+}
+.priceOld {
+	font-size: 28px;
+	color: #fff;
+	text-decoration: line-through;
+}
+.priceNew {
+	font-size: 60px;
+	color: #ff0000;
+}
+/* =Nav */
+.navLink {
+	font-size: 14px;
+	color: #272727;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.navLink:hover {
+	text-decoration: underline;
+}
+/* =Header */
+.logo {
+	text-align: center;
+}
+.headerContact {
+	text-align: center;
+}
+.contactCopy {
+	font-size: 14px;
+	color: #000;
+}
+.contactPhone {
+	font-size: 47px;
+	color: #ff0200;
+	font-weight: bold;
+	text-decoration: none;
+}
+/* =Hero */
+.hero {
+	padding: 55px 10px 23px;
+	background-image: url(../img/bgHero.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: top;
 }
