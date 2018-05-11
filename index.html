@@ -64,30 +64,30 @@
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<a data-fancybox="gallery" href="img/galleryEffects.jpg"><img class="img-responsive" src="img/galleryEffects_sm.jpg" alt=""></a>
-					<a data-fancybox="gallery" href="img/galleryDownload.jpg"><img class="img-responsive" src="img/galleryDownload_sm.jpg" alt=""></a>
-					<a data-fancybox="gallery" href="img/gallerySpeaker.jpg"><img class="img-responsive" src="img/gallerySpeaker_sm.jpg" alt=""></a>
+					<a data-fancybox="gallery" class="galleryItem" href="img/galleryEffects.jpg"><img class="img-responsive" src="img/galleryEffects_sm.jpg" alt=""></a>
+					<a data-fancybox="gallery" class="galleryItem" href="img/galleryDownload.jpg"><img class="img-responsive" src="img/galleryDownload_sm.jpg" alt=""></a>
+					<a data-fancybox="gallery" class="galleryItem" href="img/gallerySpeaker.jpg"><img class="img-responsive" src="img/gallerySpeaker_sm.jpg" alt=""></a>
 				</div>
 				<div class="col">
 					<img class="img-responsive" src="img/mic.png" alt="Караоке - микрофон WS 1816">
 				</div>
 				<div class="col">
-					<a data-fancybox="gallery" href="img/galleryRadio.jpg"><img class="img-responsive" src="img/galleryRadio_sm.jpg" alt=""></a>
-					<a data-fancybox="gallery" href="img/gallerySelfie.jpg"><img class="img-responsive" src="img/gallerySelfie_sm.jpg" alt=""></a>
-					<a data-fancybox="gallery" href="img/galleryRecording.jpg"><img class="img-responsive" src="img/galleryRecording_sm.jpg" alt=""></a>
+					<a data-fancybox="gallery" class="galleryItem" href="img/galleryRadio.jpg"><img class="img-responsive" src="img/galleryRadio_sm.jpg" alt=""></a>
+					<a data-fancybox="gallery" class="galleryItem" href="img/gallerySelfie.jpg"><img class="img-responsive" src="img/gallerySelfie_sm.jpg" alt=""></a>
+					<a data-fancybox="gallery" class="galleryItem" href="img/galleryRecording.jpg"><img class="img-responsive" src="img/galleryRecording_sm.jpg" alt=""></a>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="pageSection" id="gift">
+	<section class="pageSection pageSection_gift" id="gift">
 		<h2 class="sectionTitle sectionTitle_fancy">
 			Подарок на выбор
 		</h2>
 		<div class="giftInner">
-			<div class="col">
-				<img src="img/mic.png" alt="Караоке - микрофон WS 1816">
+			<div class="giftCol giftCol_mic text-align-center">
+				<img class="img-responsive giftMic" src="img/mic.png" alt="Караоке - микрофон WS 1816">
 			</div>
-			<div class="col text-align-center">
+			<div class="giftCol text-align-center">
 				<div class="action actionGift">
 					<p class="font-weight-bold font-m">Power <span class="uppercase">Bank</span></p>
 					<p>
@@ -95,9 +95,9 @@
 						<label class="actionLabel actionLabel_checkbox" for="powerBank">Выбрать</label>
 					</p>
 				</div>
-				<img class="img-responsive" src="img/pb.png" alt="Power Bank">
+				<img class="img-responsive giftImage" src="img/pb.png" alt="Power Bank">
 			</div>
-			<div class="col text-align-center">
+			<div class="giftCol text-align-center">
 				<div class="action actionGift">
 					<p class="font-weight-bold font-m">Наушники</p>
 					<p>
@@ -105,7 +105,7 @@
 						<label class="actionLabel actionLabel_checkbox" for="headphones">Выбрать</label>
 					</p>
 				</div>
-				<img class="img-responsive" src="img/headphones.png" alt="Наушники">
+				<img class="img-responsive giftImage" src="img/headphones.png" alt="Наушники">
 			</div>
 		</div>
 	</section>
@@ -135,13 +135,13 @@
 			</div>
 		</div>
 	</section>
-	<section class="pageSection" id="functions">
+	<section class="pageSection pageSection_functions" id="functions">
 		<h2 class="sectionTitle">
 			Характеристики
 		</h2>
 		<div class="sectionInner">
-			<div class="col">
-				<img class="img-responsive" src="img/micDetails.png" alt="Караоке - микрофон WS 1816">
+			<div class="col text-align-center">
+				<img class="img-responsive functionsMic" src="img/micDetails.png" alt="Караоке - микрофон WS 1816">
 			</div>
 			<div class="col">
 				<ul class="list-style-none p-0">
@@ -189,7 +189,7 @@
 		<img src="img/logo.png" alt="" class="logo">
 		<div class="action">
 			<a href="" class="btn btn_success btn_large">Получить тест-драйв</a>
-			<a href="" class="btn btn_danger btn_large">Хочу!</a>
+			<a data-fancybox data-src="#modal1" href="javascript:;" class="btn btn_danger btn_large">Хочу!</a>
 		</div>
 	</section>
 	<section class="pageSection" id="guarantee">
@@ -274,7 +274,7 @@
 	</section>
 	<section class="pageSection" id="contact">
 		<div class="col">
-			<img src="img/logoBig.png" alt="Cosmic market logo">
+			<img class="img-responsive" src="img/logoBig.png" alt="Cosmic market logo">
 		</div>
 		<div class="col">
 			<form action="" class="form">
@@ -299,6 +299,35 @@
 			Все права защищены.
 		</div>
 	</footer>
+	<div class="col display-none" id="modal1">
+		<form action="" class="form form_modal">
+			<input type="text" placeholder="Имя">
+			<input type="tel" placeholder="Телефон">
+			<div class="form-group">
+				<span>Выбери цвет:</span>
+				<div>
+					<input type="radio" class="inputCheckbox_modal" name="micColor_modal" id="micRed_modal">
+					<label for="micRed_modal" class="label_modal label_modal_red"></label>
+					<input type="radio" class="inputCheckbox_modal" name="micColor_modal" id="micBlack_modal">
+					<label for="micBlack_modal" class="label_modal label_modal_black"></label>
+					<input type="radio" class="inputCheckbox_modal" name="micColor_modal" id="micGold_modal">
+					<label for="micGold_modal" class="label_modal label_modal_gold"></label>
+					<input type="radio" class="inputCheckbox_modal" name="micColor_modal" id="micWhite_modal">
+					<label for="micWhite_modal" class="label_modal label_modal_white"></label>
+				</div>
+			</div>
+			<div class="form-group">
+				<span>Выбери подарок:</span>
+				<div>
+					<input type="radio" class="inputCheckbox_modal" name="gift_modal" id="giftPb_modal">
+					<label for="giftPb_modal" class="label_modal"></label>power BANK
+					<input type="radio" class="inputCheckbox_modal" name="gift_modal" id="giftHeadphones_modal">
+					<label for="giftHeadphones_modal" class="label_modal"></label>наушники
+				</div>
+			</div>
+			<button class="btn btn_success btn_large">Оформить заказ</button>
+		</form>
+	</div>
 	<script
 	  src="https://code.jquery.com/jquery-3.3.1.min.js"
 	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
