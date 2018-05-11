@@ -45,6 +45,35 @@ h1, .h1 {
 	text-align: center;
 	color: #fff;
 }
+h2, .h2,
+.sectionTitle {
+	font-size: 36px;
+	text-transform: uppercase;
+}
+.sectionTitle {
+	color: #9d0406;
+}
+.sectionTitle_fancy {
+	color: #fff;
+	background: linear-gradient(to left, #0a00b2, #ff0000 50%, #fffc00);
+	padding: 46px 97px;
+	margin-right: calc(100vw - 50%);
+	text-align: right;
+	position: relative;
+	z-index: 10;
+}
+.sectionTitle_fancy:before {
+	content: '';
+	width: 378px;
+	height: 43px;
+	/*background-image: linear-gradient(176deg, transparent 80%, white 80%, white), linear-gradient(rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.31)), linear-gradient(to right, #c0002e, #1100ad);*/
+	background-image: linear-gradient(rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.31)), linear-gradient(to right, #c0002e, #1100ad);
+	clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%);
+	position: absolute;
+	bottom: -42px;
+	z-index: 1;
+	right: 0px;
+}
 .fancyType {
 	display: block;
 	font-family: 'Obelix Pro', cursive;
