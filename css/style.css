@@ -48,6 +48,15 @@ h2, .h2 {
 	font-size: 36px;
 	text-transform: uppercase;
 }
+h3, .h3 {
+	font-size: 24px;
+	color: #000;
+}
+h4, .h4 {
+	font-size: 24px;
+	color: #010101;
+	text-transform: uppercase;
+}
 .sectionTitle {
 	color: #9d0406;
 	text-align: center;
@@ -257,6 +266,8 @@ h2, .h2 {
 }
 .pageSection_testimonials {
 	box-shadow: 0 0 54px 0 rgba(0, 0, 0, 0.21);
+	padding-bottom: 253px;
+	background: url(../img/bgTestimonials.png) bottom center no-repeat;
 }
 /* =Slider */
 .testimonialsSlider {
@@ -277,6 +288,9 @@ h2, .h2 {
 }
 .slideHeader img {
 	margin: auto;
+	width: 173px;
+  height: 173px;
+  border-radius: 50%;
 }
 .sliderControls {
 }
