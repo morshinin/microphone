@@ -7,40 +7,46 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css">
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" href="css/slicknav.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header class="pageSection pageSection_header">
-		<nav class="siteNav">
+		<nav class="siteNav" id="siteNav">
 			<a href="#0" class="navLink">Главная</a>
 			<a href=#0"" class="navLink">Q78-9</a>
 		</nav>
-		<div class="logo"><img src="img/logo.png" alt=""></div>
+		<div class="logo logo_header"><img src="img/logo.png" alt=""></div>
 		<div class="headerContact">
 			<p class="contactCopy">
 				Наши менеджеры готовы ответить<br>
 				Вам на все вопросы по номеру:
 			</p>
-			<p>
+			<p class="m-0">
 				<a href="tel:84959999999" class="contactPhone">8-495-99-99-999</a>
 			</p>
 		</div>
-		<nav class="pageNav">
-			<a href="#functions" class="navLink">Функции</a>
-			<a href="#testdrive" class="navLink">Тест</a>
-			<a href="#testimonials" class="navLink">Отзывы</a>
-			<a href="#gift" class="navLink">Выбрать подарок</a>
-			<a href="#guarantee" class="navLink">Гарантии</a>
-			<a href="#contact" class="navLink">Контакты</a>
-		</nav>
 	</header>
+		<div class="navWrapper">
+			<nav class="pageNav" id="pageNav">
+				<a href="#functions" class="navLink">Функции</a>
+				<a href="#testdrive" class="navLink">Тест</a>
+				<a href="#testimonials" class="navLink">Отзывы</a>
+				<a href="#gift" class="navLink">Выбрать подарок</a>
+				<a href="#guarantee" class="navLink">Гарантии</a>
+				<a href="#contact" class="navLink">Контакты</a>
+			</nav>
+		</div>
 	<section class="pageSection hero">
 		<div class="col">
 			<h1 class="h1">
 				Беспроводной Bluetooth<br>
 				караоке - микрофон
-				<span class="fancyType">WS 1816</span>
+				<!-- <span class="fancyType">WS 1816</span> -->
 			</h1>
+			<div class="text-align-center">
+				<img class="img-responsive" src="img/WS1816.png" alt="WS1816">
+			</div>
 			<p class="heroPrice price">
 				<span class="priceOld">6990</span>
 				<span class="priceNew">1990р.</span>
@@ -334,6 +340,7 @@
 	  crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
