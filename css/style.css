@@ -30,9 +30,11 @@ body {
 	padding: 0;
 }
 /* =Grid styles */
-.container {
-/*	max-width: 1440px;
-	margin: auto;*/
+@media (min-width: 768px) {
+	.container {
+		max-width: 1440px;
+		margin: auto;
+	}
 }
 .col {
 
@@ -153,7 +155,7 @@ h4, .h4 {
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 18px;
-	font-weight: 700;
+	font-weight: 400;
 	padding: 10px 25px;
 	text-decoration: none;
 	background: linear-gradient(to top, gray, silver);
@@ -165,7 +167,7 @@ h4, .h4 {
 }
 @media (min-width: 768px) {
 	.btn {
-		padding: 16px 50px;
+		padding: 7px 50px;
 		font-size: 24px;
 	}
 }
@@ -178,7 +180,7 @@ h4, .h4 {
 @media (min-width: 768px) {
 	.btn_large {
 		max-width: initial;
-		min-width: 263px;
+		min-width: 173px;
 		display: inline-block;
 		margin: 5px;
 	}
@@ -199,6 +201,7 @@ h4, .h4 {
 .price {
 	text-align: center;
 	font-weight: bold;
+	position: relative;
 }
 .priceOld {
 	font-size: 28px;
@@ -208,6 +211,14 @@ h4, .h4 {
 .priceNew {
 	font-size: 60px;
 	color: #ff0000;
+	margin-left: 30px;
+}
+.priceNew:after {
+	content: url(../img/ellipseBorder.png);
+	position: absolute;
+	right: -103px;
+  bottom: -30px;
+  left: 0;
 }
 /* =Nav */
 .navLink {
@@ -230,6 +241,7 @@ h4, .h4 {
 }
 @media (min-width: 768px) {
 	.navWrapper {
+		position: absolute;
 		display: flex;
 		justify-content: center;
 	}
@@ -297,7 +309,22 @@ h4, .h4 {
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
-	background-position: top center;
+	background-position: 0px -120px;
+}
+.heroTitle {
+	margin: 14px 0;
+	line-height: 1.3;
+}
+@media (min-width: 768px) {
+	.heroCol {
+		max-width: 50%;
+		margin-left: 80px;
+	}
+	.heroAction {
+		margin-left: 72px;
+    margin-bottom: 14px;
+    margin-top: 14px;
+	}
 }
 /* =Form */
 .form {
