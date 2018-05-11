@@ -149,9 +149,9 @@ h4, .h4 {
 .btn {
 	color: #fff;
 	text-transform: uppercase;
-	font-size: 24px;
+	font-size: 18px;
 	font-weight: 700;
-	padding: 16px 50px;
+	padding: 10px 25px;
 	text-decoration: none;
 	background: linear-gradient(to top, gray, silver);
 	border-radius: 40px / 34px;
@@ -159,6 +159,12 @@ h4, .h4 {
 }
 .btn:hover {
 	cursor: pointer;
+}
+@media (min-width: 768px) {
+	.btn {
+		padding: 16px 50px;
+		font-size: 24px;
+	}
 }
 .btn_large {
 	max-width: 163px;
@@ -168,7 +174,7 @@ h4, .h4 {
 }
 @media (min-width: 768px) {
 	.btn_large {
-		min-width: 263px;
+		width: 263px;
 		display: inline-block;
 		margin: 5px;
 	}
@@ -268,6 +274,34 @@ input {
 input::placeholder {
 	color: #b6b6b6;
 }
+/* =Page Sections */
+.pageSection {
+	padding: 30px 10px;
+}
+.pageSection_header {
+	padding-top: 10px;
+}
+.pageSection_testdrive {
+	background: radial-gradient(#fff 30%, #e6e6e6);
+}
+.pageSection_testimonials {
+	box-shadow: 0 0 54px 0 rgba(0, 0, 0, 0.21);
+	padding-bottom: 253px;
+	background: url(../img/bgTestimonials.png) bottom center no-repeat;
+}
+/* =Action */
+.action {
+	margin-bottom: 30px;
+}
+.action_color {
+	display: flex;
+	flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+	.action_color {
+		display: block;
+	}	
+}
 .actionLabel {
 	text-transform: uppercase;
 	font-size: 24px;
@@ -284,21 +318,39 @@ input::placeholder {
 }
 .actionLabel_radio {
 	display: flex;
-	justify-content: center;
 	-ms-align-items: center;
 	align-items: center;
-	width: 360px;
-	height: 136px;
 	background: #ededed;
+	padding: 10px 10px 10px 60px;
+	margin: 5px;
+	font-weight: 400;
+	font-size: 14px;
 	position: relative;
+}
+@media (min-width: 768px) {
+	.actionLabel_radio {
+		justify-content: center;
+		font-size: 24px;
+		padding: 10px;
+		width: 360px;
+		height: 136px;
+	}
 }
 .actionLabel_radio:after {
 	content: '';
 	position: absolute;
-	width: 100px;
-	height: 100px;
+	width: 30px;
+	height: 30px;
 	left: 15px;
+	top: 5px;
 	border-radius: 50%;
+}
+@media (min-width: 768px) {
+	.actionLabel_radio:after {
+		width: 100px;
+		height: 100px;
+		top: 30px;
+	}
 }
 .actionLabel_color_black:after {
 	background: #101010;
@@ -323,25 +375,6 @@ input::placeholder {
 }
 .actionInput[type=radio]:checked + .actionLabel {
 	border-color: #ff0200;
-}
-/* =Page Sections */
-.pageSection {
-	padding: 30px 10px;
-}
-.pageSection_header {
-	padding-top: 10px;
-}
-.pageSection_testdrive {
-	background: radial-gradient(#fff 30%, #e6e6e6);
-}
-.pageSection_testimonials {
-	box-shadow: 0 0 54px 0 rgba(0, 0, 0, 0.21);
-	padding-bottom: 253px;
-	background: url(../img/bgTestimonials.png) bottom center no-repeat;
-}
-/* =Action */
-.action {
-	margin-bottom: 30px;
 }
 /* =Slider */
 .testimonialsSlider {
@@ -391,4 +424,13 @@ input::placeholder {
 	box-shadow: 0 0 54px 0 rgba(0, 0, 0, 0.31);
 	padding: 60px 43px;
 
+}
+/* =Microphone */
+.micContour {
+	max-height: 100px;
+}
+@media (min-width: 768px) {
+	.micContour {
+		max-height: initial;
+	}
 }
