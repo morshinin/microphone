@@ -248,7 +248,7 @@ h2, .h2 {
 .actionInput[type=radio]:checked + .actionLabel {
 	border-color: #ff0200;
 }
-/* Page Sections */
+/* =Page Sections */
 .pageSection {
 	padding: 30px 10px;
 }
@@ -257,4 +257,44 @@ h2, .h2 {
 }
 .pageSection_testimonials {
 	box-shadow: 0 0 54px 0 rgba(0, 0, 0, 0.21);
+}
+/* =Slider */
+.testimonialsSlider {
+	padding: 0 40px;
+	position: relative;	
+}
+.slider {
+/*  max-width: 360px;*/
+}
+.slide {
+	border-radius: 30px;
+  border: solid 3px #9d0406;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  min-height: 478px;
+  text-align: center;
+  margin: 0 30px;
+}
+.slideHeader img {
+	margin: auto;
+}
+.sliderControls {
+}
+.my-slick-arrow {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	border: 3px solid lightgray;
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+	position: absolute;
+	top: 45%;
+}
+.arrow-prev {
+	transform: rotate(-45deg);
+	left: 15px;
+}
+.arrow-next {
+	transform: rotate(135deg);
+	right: 15px;
 }
