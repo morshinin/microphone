@@ -343,3 +343,8 @@ input::placeholder {
 	transform: rotate(135deg);
 	right: 15px;
 }
+/* =Footer */
+.pageFooter {
+	box-shadow: 0 0 54px 0 rgba(0, 0, 0, 0.31);
+	padding: 60px 43px;
+}
