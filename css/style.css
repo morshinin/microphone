@@ -284,15 +284,7 @@ h4, .h4 {
 .flip-clock-dot.bottom {
 	bottom: 50px;
 }
-/*@media (max-width: 450px) {
-	.counter {
-		display: none;
-	}
-}*/
 @media (min-width: 768px) {
-/*	.counter {
-		display: block;
-	}*/
 	.timerTitle {
 		margin-left: 131px;
 	}
@@ -513,6 +505,10 @@ textarea::placeholder {
 	cursor: pointer;
 	position: relative;
 }
+.label_modal_gift {
+	background: white;
+	top: 10px;
+}
 .inputCheckbox_modal[type=radio]:checked + .label_modal {
 	border-color: gray;
 }
@@ -521,8 +517,11 @@ textarea::placeholder {
 	color: #fff;
 	font-size: 25px;
 	position: absolute;
-	left: 20%;
-	top: -3px;
+	left: 10%;
+	top: -7px;
+}
+.inputCheckbox_modal[type=radio]:checked + .label_modal_gift:after{
+	color: #000;
 }
 .inputCheckbox_modal[type=radio]:checked + .label_modal_white:after {
 	color: #000;
