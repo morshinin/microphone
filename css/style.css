@@ -237,7 +237,15 @@ h4, .h4 {
 	}
 }
 /* =Timer */
+@media (max-width: 450px) {
+	.counter {
+		display: none;
+	}
+}
 @media (min-width: 768px) {
+	.counter {
+		display: block;
+	}
 	.timerTitle {
 		margin-left: 131px;
 	}
