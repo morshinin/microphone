@@ -234,7 +234,22 @@ h4, .h4 {
 		z-index: 99999;
 	}
 }
+/* =Timer */
+@media (min-width: 768px) {
+	.timerTitle {
+		margin-left: 131px;
+	}
+}
 /* =Nav */
+@media (min-width: 768px) {
+	.siteNav {
+		text-transform: uppercase;
+		box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.48);
+		border-top-right-radius: 30px;
+		border-bottom-right-radius: 30px;
+		padding: 20px;
+	}
+}
 .navLink {
 	font-size: 14px;
 	color: #272727;
@@ -359,8 +374,25 @@ h4, .h4 {
 }
 @media (min-width: 768px) {
 	.form {
-		padding: 111px 30px;
+		padding: 51px 30px 111px;
 		margin: 0;
+	}
+}
+@media (min-width: 768px) {
+	.formTitle {
+		font-weight: 400;
+		position: relative;
+		font-size: 50px;
+		margin: 0 0 30px;
+		line-height: 1.2;
+		text-align: center;
+	}
+	.formTitle span {
+		color: red;
+		position: absolute;
+		transform: rotate(90deg);
+		font-size: 24px;
+		top: 48px;
 	}
 }
 input[type=text],
