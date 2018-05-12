@@ -489,7 +489,7 @@ input::placeholder {
 }
 @media (min-width: 768px) {
 	.actionLabel_radio {
-		justify-content: center;
+		/*justify-content: center;*/
 		font-size: 24px;
 		padding: 10px;
 		width: 330px;
@@ -500,9 +500,9 @@ input::placeholder {
 		background: #e3e3e3;
 	}
 }
-.actionLabel_radio:after {
+.actionLabel_radio:before {
 	content: '';
-	position: absolute;
+	/*position: absolute;*/
 	width: 30px;
 	height: 30px;
 	left: 15px;
@@ -510,22 +510,23 @@ input::placeholder {
 	border-radius: 50%;
 }
 @media (min-width: 768px) {
-	.actionLabel_radio:after {
+	.actionLabel_radio:before {
 		width: 100px;
 		height: 100px;
 		top: 15px;
+    margin-right: 10px;
 	}
 }
-.actionLabel_color_black:after {
+.actionLabel_color_black:before {
 	background: #101010;
 }
-.actionLabel_color_red:after {
+.actionLabel_color_red:before {
 	background: #ff0200;
 }
-.actionLabel_color_gold:after {
+.actionLabel_color_gold:before {
 	background: #ffcc00;
 }
-.actionLabel_color_white:after {
+.actionLabel_color_white:before {
 	background: #fff;
 }
 /*.actionLabel:hover {
@@ -610,15 +611,22 @@ input::placeholder {
 .pageFooter {
 	box-shadow: 0 0 54px 0 rgba(0, 0, 0, 0.31);
 	padding: 60px 43px;
-
 }
 /* =Microphone */
 .micContour {
+	position: absolute;
+	opacity: 0;
+	transition: .3s ease;
+}
+.micContour_active {
 	max-height: 100px;
+	opacity: 1;
+	/*position: relative;*/
 }
 @media (min-width: 768px) {
 	.micContour {
 		max-height: initial;
+		left: 0;
 	}
 }
 /* =Gallery */
@@ -780,7 +788,7 @@ input::placeholder {
 @media (min-width: 768px) {
 	.variant {
 		box-shadow: 0 0 95px 0 rgba(0, 0, 0, 0.15);
-    padding-bottom: 42px;
+    padding-bottom: 120px;
 	}
 	.variantTitle {
 		margin-bottom: 0;
@@ -794,6 +802,7 @@ input::placeholder {
 	}
 	.variantCol_mic {
 		flex: 1;
+		position: relative;
 	}
 	.variantCol_action {
 		flex: 3;

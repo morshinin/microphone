@@ -53,3 +53,36 @@ giftRadio.forEach(radio => {
 		}
 	})
 })
+// Variant
+const variantRadio = document.querySelectorAll('input[name=micColor]'),
+			mic = document.querySelectorAll('.micContour')
+
+function checkMic(mic, color) {
+	mic.forEach(mic => {
+			mic.classList.remove('micContour_active')
+		if (mic.classList.contains('micContour_' + color)){
+			mic.classList.add('micContour_active')
+		}
+	})
+}
+
+variantRadio.forEach(variant => {
+	variant.addEventListener('change', e => {
+		switch (e.target.id) {
+			case 'micBlack':
+				checkMic(mic, 'black')
+				break
+			case 'micRed':
+				checkMic(mic, 'red')
+				break
+			case 'micGold':
+				checkMic(mic, 'gold')
+				break
+			case 'micWhite':
+				checkMic(mic, 'white')
+				break
+			default:
+				break
+		}
+	})
+})
