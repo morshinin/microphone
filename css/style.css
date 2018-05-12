@@ -840,9 +840,9 @@ textarea::placeholder {
 		bottom: -164px;
 		left: 158px;
 	}
-	.giftImage_pb_cord_active:after {
+/*	.giftImage_pb_cord_active:after {
 		opacity: 1;
-	}
+	}*/
 	.giftImage_hph {
 		margin-top: 23px;
 	}
@@ -850,6 +850,11 @@ textarea::placeholder {
 		content: url(../img/headphonesCord1.png);
 		bottom: -144px;
     right: 163px;
+	}
+}
+@media (min-width: 1118px) {
+	.giftImage_pb_cord_active:after {
+		opacity: 1;
 	}
 	.giftImage_hph_cord_active:after {
 		opacity: 1;
