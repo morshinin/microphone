@@ -224,10 +224,10 @@
 			</h2>
 			<div class="guaranteeRow">
 				<div class="col">
-					<a data-fancybox="gallery" href="img/book1.png"><img class="img-responsive" src="img/book1_sm.jpg" alt=""></a>
+					<a class="guaranteeItem" data-fancybox="gallery" href="img/book1.png"><img class="img-responsive" src="img/book1_sm.jpg" alt=""></a>
 				</div>
 				<div class="col">
-					<a data-fancybox="gallery" href="img/book2.png"><img class="img-responsive" src="img/book2_sm.jpg" alt=""></a>
+					<a class="guaranteeItem" data-fancybox="gallery" href="img/book2.png"><img class="img-responsive" src="img/book2_sm.jpg" alt=""></a>
 				</div>
 			</div>
 		</div><!-- end of .guaranteeInner -->
@@ -295,7 +295,7 @@
 			</div><!-- end of .testimonialsSlider -->
 			<div class="action text-align-center">
 				<h4 class="h4 testimonialsH4">Оставь свой отзыв о покупке!</h4>
-				<a href="#0" class="btn btn_success">Оставить отзыв</a>
+				<a data-fancybox data-src="#modal2" href="javascript:;" class="btn btn_success">Оставить отзыв</a>
 			</div>
 		</div><!-- end of .testimonialsInner -->
 	</section><!-- end of .testimonials -->
@@ -364,7 +364,17 @@
 			</div>
 			<button class="btn btn_success btn_large">Оформить заказ</button>
 		</form>
-	</div>
+	</div><!-- end of #modal1 -->
+	<div class="display-none" id="modal2">
+		<form action="" class="form form_modal">
+			<h4>Оставьте отзыв</h4>
+			<input type="text" class="form-control" placeholder="Ваше имя">
+			<input type="text" class="form-control" placeholder="Ваш телефон">
+			<input type="text" class="form-control" placeholder="Город">
+			<textarea class="form-control" placeholder="Сообщение"></textarea>
+			<button class="btn btn_success btn_large">Отправить</button>
+		</form>
+	</div><!-- end of #modal2 -->
 	<script
 	  src="https://code.jquery.com/jquery-3.3.1.min.js"
 	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

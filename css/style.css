@@ -273,7 +273,7 @@ h4, .h4 {
 		position: absolute;
 		display: flex;
 		width: 100%;
-		/*justify-content: center;*/
+		z-index: -1;
 	}
 	.pageNav {
 		display: inline-block;
@@ -397,7 +397,8 @@ h4, .h4 {
 }
 input[type=text],
 input[type=tel],
-input[type=email] {
+input[type=email],
+textarea {
 	font-size: 21px;
 	padding: 10px 10px;
 	margin-bottom: 40px;
@@ -410,7 +411,8 @@ input[type=email] {
 input {
 	outline: 0;
 }
-input::placeholder {
+input::placeholder,
+textarea::placeholder {
 	color: #b6b6b6;
 }
 .inputCheckbox_modal {
@@ -712,10 +714,14 @@ input::placeholder {
 	bottom: 0;
 	top: 0;
 	right: 0;
+	transition: .3s ease;
 }
 @media (min-width: 768px) {
 	.galleryItem {
 		margin-bottom: 30px;
+	}
+	.galleryItem:hover:after {
+		transform: scale(1.1);
 	}
 }
 /* Gift */
@@ -944,6 +950,32 @@ input::placeholder {
 	.guaranteeRow {
 		display: flex;
     justify-content: space-around;
+	}
+}
+.guaranteeItem {
+	display: inline-block;
+	position: relative;
+	outline: 0;
+}
+.guaranteeItem:after {
+	content: '';
+	background: url(../img/magnifyGrey.png) center no-repeat;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	left: 0;
+	bottom: 0;
+	top: 0;
+	right: 0;
+	transition: .3s ease;
+}
+@media (min-width: 768px) {
+	.guaranteeItem {
+		margin-bottom: 30px;
+	}
+	.guaranteeItem:hover:after {
+		transform: scale(1.2);
 	}
 }
 /* =Testimonials */
