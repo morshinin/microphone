@@ -146,6 +146,9 @@ h4, .h4 {
 	color: #fff;
 }
 /* =Other helpers */
+.fixed {
+	position: fixed;
+}
 .img-responsive {
 	max-width: 100%;
 }
@@ -221,6 +224,15 @@ h4, .h4 {
 	right: -103px;
   bottom: -30px;
   left: 0;
+}
+/* =Header */
+@media (min-width: 768px) {
+	.headerWrapper {
+		position: fixed;
+		width: 100%;
+		top: 0;
+		z-index: 99999;
+	}
 }
 /* =Nav */
 .navLink {
@@ -312,6 +324,11 @@ h4, .h4 {
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: 0px -120px;
+}
+@media (min-width: 768px) {
+	.hero {
+		margin-top: 150px;
+	}
 }
 .heroTitle {
 	margin: 14px 0;
@@ -421,6 +438,7 @@ input::placeholder {
 .pageSection_header {
 	padding-top: 10px;
 	position: relative;
+	background: #fff;
 }
 @media (min-width: 768px) {
 	.pageSection_header {

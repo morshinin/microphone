@@ -11,32 +11,34 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header class="pageSection pageSection_header">
-		<nav class="siteNav" id="siteNav">
-			<a href="#0" class="navLink">Главная</a>
-			<a href=#0"" class="navLink">Q78-9</a>
-		</nav>
-		<div class="logo logo_header"><img src="img/logo.png" alt=""></div>
-		<div class="headerContact">
-			<p class="contactCopy">
-				Наши менеджеры готовы ответить<br>
-				Вам на все вопросы по номеру:
-			</p>
-			<p class="m-0">
-				<a href="tel:84959999999" class="contactPhone">8-495-99-99-999</a>
-			</p>
-		</div>
-	</header>
-		<div class="navWrapper">
-			<nav class="pageNav" id="pageNav">
-				<a href="#functions" class="navLink">Функции</a>
-				<a href="#testdrive" class="navLink">Тест</a>
-				<a href="#testimonials" class="navLink">Отзывы</a>
-				<a href="#gift" class="navLink">Выбрать подарок</a>
-				<a href="#guarantee" class="navLink">Гарантии</a>
-				<a href="#contact" class="navLink">Контакты</a>
+	<div class="headerWrapper">
+		<header class="pageSection pageSection_header">
+			<nav class="siteNav" id="siteNav">
+				<a href="#0" class="navLink">Главная</a>
+				<a href=#0"" class="navLink">Q78-9</a>
 			</nav>
-		</div>
+			<div class="logo logo_header"><img src="img/logo.png" alt=""></div>
+			<div class="headerContact">
+				<p class="contactCopy">
+					Наши менеджеры готовы ответить<br>
+					Вам на все вопросы по номеру:
+				</p>
+				<p class="m-0">
+					<a href="tel:84959999999" class="contactPhone">8-495-99-99-999</a>
+				</p>
+			</div>
+		</header>
+			<div class="navWrapper">
+				<nav class="pageNav" id="pageNav">
+					<a href="#functions" class="navLink">Функции</a>
+					<a href="#testdrive" class="navLink">Тест</a>
+					<a href="#testimonials" class="navLink">Отзывы</a>
+					<a href="#gift" class="navLink">Выбрать подарок</a>
+					<a href="#guarantee" class="navLink">Гарантии</a>
+					<a href="#contact" class="navLink">Контакты</a>
+				</nav>
+			</div>
+	</div> <!-- end of .headerWrapper -->
 	<section class="pageSection hero">
 		<div class="container">
 			<div class="col heroCol">
@@ -55,7 +57,7 @@
 					+ выбери свой подарок
 				</p>
 				<div class="heroAction">
-					<a href="" class="btn btn_success btn_large">Заказать</a>
+					<a data-fancybox data-src="#modal1" href="javascript:;" class="btn btn_success btn_large">Заказать</a>
 					<a href="" class="btn btn_danger btn_large">Хочу!</a>
 				</div>
 				<div class="counter">
@@ -145,7 +147,7 @@
 						<label class="actionLabel actionLabel_radio actionLabel_color_white" for="micWhite">Белый</label>
 					</div><!-- end of .action_color -->
 					<div class="action variantAction_call">
-						<a href="" class="btn btn_success btn_large">Выбрать</a>
+						<a data-fancybox data-src="#modal1" href="javascript:;" class="btn btn_success btn_large">Выбрать</a>
 						<a href="" class="btn btn_danger btn_large">Хочу!</a>
 					</div>
 				</div>
