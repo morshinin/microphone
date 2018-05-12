@@ -64,13 +64,23 @@ $(document).ready(function(){
 	          timerId=setInterval(flip,3000);
 	          
 	    });
+	// Flip counter 
+	var clock;
 
-	    // $('#call-but-m1').click(function() {
-	    //        var form_selector = $("#m1-form");
-	    //        M1.modalShow(form_selector);
-	    //        $("#overlay-popup-m1").show();
-	    //        $("input[name=from_recall_button]", form_selector).val(1);
-	    // });
+	clock = $('.clock').FlipClock({
+        clockFace: 'DailyCounter',
+        language: 'ru',
+        autoStart: false,
+        callbacks: {
+        	stop: function() {
+        		$('.message').html('The clock has stopped!')
+        	}
+        }
+    });
+		    
+    clock.setTime(220880);
+    clock.setCountdown(true);
+    clock.start();
 });
 // Gift inputs
 const giftRadio = document.querySelectorAll('input[name=gift]'),

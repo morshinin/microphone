@@ -237,15 +237,62 @@ h4, .h4 {
 	}
 }
 /* =Timer */
-@media (max-width: 450px) {
+@media (min-width: 768px) {
+	.flip-clock-wrapper {
+		margin: 0 0 0 120px;
+	}
+}
+.flip-clock-wrapper ul {
+  background: #fff;
+  width: 42px;
+  height: 70px;
+  font-weight: 400;
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+}
+.flip-clock-wrapper ul li {
+	line-height: 67px;
+}
+.flip-clock-wrapper ul li a div.up:after {
+	background-color: #fff;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.flip-clock-wrapper ul li a div div.inn {
+  color: #111;
+  text-shadow: 0 1px 1px #555;
+  background-color: #ddd;
+  font-size: 40px;
+}
+.flip-clock-divider .flip-clock-label {
+	bottom: 0.5em;
+	top: auto;
+	color: white;
+	right: -66px;
+}
+.flip-clock-divider.minutes .flip-clock-label {
+	right: -66px;
+}
+.flip-clock-dot {
+	background: white;
+	width: 5px;
+	height: 5px;
+}
+.flip-clock-dot.top {
+	top: 20px;
+}
+.flip-clock-dot.bottom {
+	bottom: 50px;
+}
+/*@media (max-width: 450px) {
 	.counter {
 		display: none;
 	}
-}
+}*/
 @media (min-width: 768px) {
-	.counter {
+/*	.counter {
 		display: block;
-	}
+	}*/
 	.timerTitle {
 		margin-left: 131px;
 	}
@@ -367,7 +414,12 @@ h4, .h4 {
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
-	background-position: 0px -120px;
+	/*background-position: 0px -120px;*/
+}
+@media (min-width: 1880px) {
+	.hero {
+		background-position: 0px -120px;
+	}
 }
 .hero_thx {
 	background: none;
