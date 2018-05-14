@@ -883,10 +883,6 @@ textarea::placeholder {
 	.giftImageWrapper {
 		position: relative;
 	}
-	.giftImage_hph_cord:hover:after,
-	.giftImage_pb_cord:hover:after {
-		opacity: 1;
-	} 
 	.giftImage_pb {
 		margin-top: 54px;
 	}
@@ -912,12 +908,16 @@ textarea::placeholder {
 	}
 }
 @media (min-width: 1118px) {
-	.giftImage_pb_cord_active:after {
+	.giftImage_hph_cord:hover:after,
+	.giftImage_pb_cord:hover:after {
+		opacity: 1;
+	} 
+/*	.giftImage_pb_cord_active:after {
 		opacity: 1;
 	}
 	.giftImage_hph_cord_active:after {
 		opacity: 1;
-	}
+	}*/
 }
 .giftInner {
 	display: flex;
