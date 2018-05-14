@@ -883,6 +883,10 @@ textarea::placeholder {
 	.giftImageWrapper {
 		position: relative;
 	}
+	.giftImage_hph_cord:hover:after,
+	.giftImage_pb_cord:hover:after {
+		opacity: 1;
+	} 
 	.giftImage_pb {
 		margin-top: 54px;
 	}
