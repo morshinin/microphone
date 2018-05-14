@@ -233,7 +233,7 @@ h4, .h4 {
 		position: fixed;
 		width: 100%;
 		top: 0;
-		z-index: 99996;
+		z-index: 11111;
 	}
 }
 /* =Timer */
@@ -911,13 +911,7 @@ textarea::placeholder {
 	.giftImage_hph_cord:hover:after,
 	.giftImage_pb_cord:hover:after {
 		opacity: 1;
-	} 
-/*	.giftImage_pb_cord_active:after {
-		opacity: 1;
 	}
-	.giftImage_hph_cord_active:after {
-		opacity: 1;
-	}*/
 }
 .giftInner {
 	display: flex;
